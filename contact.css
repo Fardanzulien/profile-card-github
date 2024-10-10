@@ -1,0 +1,251 @@
+*,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+nav {
+  line-height: 60px;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  padding: 2px;
+  opacity: 1;
+  background-color: rgb(199, 181, 181);
+  cursor: pointer;
+  margin-left: 68%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+  border: solid px black;
+}
+
+.pb-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.container {
+  color: white;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info,
+.contact-form {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.contact-info {
+  height: 60%;
+  width: 23%;
+}
+.contact-info h2,
+.contact-form h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.contact-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contact-info .info-item i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.contact-info .info-item a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+.contact-info .info-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  width: 60%;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #111;
+}
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.contact-form h2 span {
+  color: #1e90ff;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input,
+.contact-form form textarea {
+  background-color: #222;
+  border: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+.contact-form form button {
+  background-color: #333;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-form form button:hover {
+  background-color: #444;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  height: 3rem;
+  width: 3rem;
+  border: solid 1px white;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+.wrapper .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i {
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper .icon .tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: inherit;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+}
+.wrapper .icon:hover span {
+  color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip {
+  background: #3b5999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip {
+  background: #46c1f6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip {
+  background: #e1306c;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip {
+  background: #333;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip {
+  background: #de463b;
+}
+
+.wrapping-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pb-text {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-5 {
+  opacity: 0.7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  color: white;
+}
+
+.text-6 {
+  opacity: 0.7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5b78f6;
+}
+
+p,
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

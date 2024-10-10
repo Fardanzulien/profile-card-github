@@ -1,0 +1,291 @@
+*,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+nav {
+  line-height: 60px;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  padding: 2px;
+  opacity: 1;
+  background-color: rgb(199, 181, 181);
+  cursor: pointer;
+  margin-left: 68%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+  border: solid px black;
+}
+
+.wrapper {
+  margin-top: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i {
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper .icon .tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span {
+  color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before {
+  background: #3b5999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before {
+  background: #46c1f6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before {
+  background: #e1306c;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+  background: #333;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before {
+  background: #de463b;
+}
+
+.wrapping-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pb-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.row {
+  padding: 5.5%;
+}
+
+.text {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.aboutme {
+  color: white;
+}
+
+h3,
+h4 {
+  color: white;
+}
+
+.text-1 {
+  color: #666;
+}
+
+.box {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 253, 253, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 25px;
+  height: 21rem;
+  width: 28%;
+  border: solid 1px white;
+}
+
+.about {
+  margin-left: 6%;
+  width: 40%;
+}
+
+.wrapping-content {
+  margin-top: 1%;
+}
+
+.button-1 {
+  font-family: sans-serif;
+  backdrop-filter: blur(25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 3.3rem;
+  color: white;
+  border-radius: 12rem;
+  padding: 4%;
+  width: 16rem;
+  border: solid 1px white;
+}
+
+.button-1:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.text-1 {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 1rem;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2%;
+}
+
+.skill {
+  margin-top: 5rem;
+  margin-right: 14rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-1 {
+  margin-right: 2rem;
+}
+
+.persen {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 2rem;
+}
+
+.skill-3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 1%;
+}
+
+.skill-2 {
+  margin-left: 10rem;
+}
+
+.pb-text {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-5 {
+  opacity: 0.7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  color: white;
+}
+
+.text-6 {
+  opacity: 0.7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5b78f6;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+}
